@@ -1,0 +1,179 @@
+/* 
+    Custom Font Families
+    Includes Commodore 64 Pixelized and Perfect DOS VGA 437.
+*/
+
+@font-face {
+    /* https://www.dafont.com/commodore-64-pixelized.font */
+    font-family: commodore;
+    src: url(content/fonts/commodore.ttf);
+}
+
+@font-face {
+    /* https://www.dafont.com/perfect-dos-vga-437.font */
+    font-family: dos;
+    src: url(content/fonts/perfect-dos.ttf);
+}
+
+/* 
+    Main Tags
+    For stuff like the body, header, etc. Includes compound classes.
+*/
+
+body {
+    /* background-color: rgb(44, 44, 44); */
+    background: url("content/images/bg.png") rgba(0, 0, 0, 0.5) no-repeat center center fixed;
+    background-blend-mode: multiply;
+
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+header {
+    /* background-color: rgb(0, 0, 255); */
+    /* height: 118px; */
+    padding-bottom: 16px;
+    text-align: center;
+}
+
+a {
+    color: rgb(255, 255, 255);
+    font-family: dos, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+nav {
+    /* background-color: rgb(255, 0, 0); */
+    background-color: rgb(77, 77, 77, 0.9);
+    /* height: 40px; */
+    text-align: center;
+    
+    padding-top: 14px;
+    padding-bottom: 14px;
+}
+
+nav a {
+    text-decoration: none;
+    font-size: 18px;
+
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+nav a:hover {
+    background-color: rgb(0, 0, 0);
+}
+
+main {
+    /* background-color: rgb(255, 255, 0); */
+    background-color: rgba(0, 0, 0, 0.9);
+    color:rgb(255, 255, 255);
+    font-family: dos, sans-serif;
+
+    padding-top: 1px;
+    padding-bottom: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+main p {
+    color:rgb(255, 255, 255);
+}
+
+main h2 {
+    font-weight: 15;
+    color:rgb(255, 255, 255);
+    line-height: 0.01;
+}
+
+main hr {
+    margin-top: 1px;
+    margin-bottom: 12px;
+}
+
+main img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+    width: 70%;
+    height: auto;
+}
+
+footer {
+    /* background-color: rgb(255, 105, 180); */
+    background-color: rgb(44, 44, 44, 0.9);
+    /* height: 100px; */
+    text-align: center;
+
+    padding-top: 14px;
+    padding-bottom: 14px;
+}
+
+footer p {
+    color: rgb(255, 255, 255);
+    font-family: dos;
+}
+
+noscript {
+    position: fixed;
+    top: 20px;
+
+    background-color: rgb(255, 0, 0);
+    color:rgb(255, 255, 255);
+    text-align: center;
+}
+
+/* 
+    Custom Classes
+    The custom classes used in the text documents.
+*/
+
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    /* width: 1024px; */ 
+    width: 65%;
+}
+
+.highlighted {
+    background-color: rgb(0, 0, 0);
+}
+
+.smile {
+    text-align: center;
+    color: rgb(0, 231, 0);
+}
+
+.smile:hover span {
+    display: none;
+}
+
+.smile:hover:before {
+    content: "(´^ω^`) ありがとう!";
+}
+
+.fit-img {
+    max-width:100%;
+    max-height:100%;
+}
+
+.header-text {
+    font-family: commodore, sans-serif;
+    color: rgb(102, 153, 255);
+}
+
+.header-main {
+    /* font-family: commodore, sans-serif;
+    color: rgb(102, 153, 255); */
+
+    max-width: 50%;
+    max-height: 50%;
+
+    padding-top: 25px;
+}
+
+.contact {
+    line-height: 0.3;
+}
